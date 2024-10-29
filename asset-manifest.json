@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/morsetim/github.io/norebase/static/css/main.e4ca3b41.css",
+    "main.js": "/morsetim/github.io/norebase/static/js/main.8a4e7a6c.js",
+    "static/js/453.3814c9b8.chunk.js": "/morsetim/github.io/norebase/static/js/453.3814c9b8.chunk.js",
+    "index.html": "/morsetim/github.io/norebase/index.html",
+    "main.e4ca3b41.css.map": "/morsetim/github.io/norebase/static/css/main.e4ca3b41.css.map",
+    "main.8a4e7a6c.js.map": "/morsetim/github.io/norebase/static/js/main.8a4e7a6c.js.map",
+    "453.3814c9b8.chunk.js.map": "/morsetim/github.io/norebase/static/js/453.3814c9b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4ca3b41.css",
+    "static/js/main.8a4e7a6c.js"
+  ]
+}
