@@ -44,20 +44,19 @@ const CryptoTable = () => {
 
   const handleNextPage = () => {
     setPage((prev) => Math.min(prev + 1, totalPages));
-    
   };
 
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-2xl font-bold mb-4">Cryptocurrency Prices</h1>
       <div className="overflow-x-auto mb-4">
-        <table className="w-full border-collapse">
-          <thead>
-            <tr className=" text-white">
-              <th className="px-4 py-2 text-left text-slate-900">Coin</th>
-              <th className="px-4 py-2 text-left text-slate-900">Code</th>
-              <th className="px-4 py-2 text-right text-slate-900">Price</th>
-              <th className="px-4 py-2 text-right text-slate-900">Total Supply</th>
+        <table className="min-w-full border-collapse ">
+          <thead className='sticky top-0 z-10'>
+            <tr className="text-white">
+              <th className="px-4 py-2 w-1/4 text-left text-slate-900">Coin</th>
+              <th className="px-4 py-2 w-1/4 text-left text-slate-900 ">Code</th>
+              <th className="px-4 py-2 w-1/4 text-right text-slate-900 ">Price</th>
+              <th className="px-4 py-2 w-1/4 text-right text-slate-900 ">Total Supply</th>
             </tr>
           </thead>
           <tbody>
@@ -66,9 +65,9 @@ const CryptoTable = () => {
                 key={coin.id}
                 className={index % 2 === 0 ? 'bg-gray-200' : 'bg-white'}
               >
-                <td className="px-4 py-2">{coin.name}</td>
-                <td className="px-4 py-2">{coin.symbol}</td>
-                <td className="px-4 py-2 text-right">
+                <td className="px-4 w-1/4 py-2">{coin.name}</td>
+                <td className="px-4 w-1/4 py-2">{coin.symbol}</td>
+                <td className="px-4 py-2 w-1/4 text-right">
                   ${parseFloat(coin.price_usd).toFixed(2)}
                 </td>
                 <td className="px-4 py-2 text-right flex justify-end gap-x-2">
@@ -93,8 +92,8 @@ const CryptoTable = () => {
             }`}
           >
             <div className='flex gap-x-2 justify-between items-center'>
-            <MoveLeft className="h-5 w-5" />
-            <p className={`font-bold `}>Previous</p>
+             <MoveLeft className="h-5 w-5" />
+             <p className={`font-bold `}>Previous</p>
             </div>
           </button>
           <button
